@@ -71,8 +71,29 @@ const fs = require('fs');
         const archEl = await page.$('#architecture');
         await archEl.scrollIntoViewIfNeeded();
         await page.waitForTimeout(300);
-        await page.screenshot({ path: path.join(artifactDir, 'portfolio_architecture.png'), clip: { x: 0, y: 0, width: 1280, height: 800 } });
+        await page.screenshot({ path: path.join(artifactDir, 'portfolio_architecture.png'), clip: { x: 0, y: 0, width: 1280, height: 750 } });
         console.log("Saved portfolio_architecture.png");
+
+        // 7. Scroll to Competencies & Quality Promise
+        const compEl = await page.$('#competencies');
+        await compEl.scrollIntoViewIfNeeded();
+        await page.waitForTimeout(300);
+        await page.screenshot({ path: path.join(artifactDir, 'portfolio_quality_competencies.png'), clip: { x: 0, y: 0, width: 1280, height: 950 } });
+        console.log("Saved portfolio_quality_competencies.png");
+
+        // 8. Scroll to External Validation / Testimonials
+        const valEl = await page.$('#validation');
+        await valEl.scrollIntoViewIfNeeded();
+        await page.waitForTimeout(300);
+        await page.screenshot({ path: path.join(artifactDir, 'portfolio_validation.png'), clip: { x: 0, y: 0, width: 1280, height: 700 } });
+        console.log("Saved portfolio_validation.png");
+
+        // 9. Scroll to Target Roles & Footer
+        const rolesEl = await page.$('#roles');
+        await rolesEl.scrollIntoViewIfNeeded();
+        await page.waitForTimeout(300);
+        await page.screenshot({ path: path.join(artifactDir, 'portfolio_roles_contact.png'), clip: { x: 0, y: 0, width: 1280, height: 850 } });
+        console.log("Saved portfolio_roles_contact.png");
 
         // Also save portfolio_preview.png in the project directory
         await page.screenshot({ path: path.join(__dirname, 'portfolio_preview.png'), clip: { x: 0, y: 0, width: 1280, height: 860 } });
