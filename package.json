@@ -1,0 +1,22 @@
+{
+  "name": "sap-analytics-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website für Fabian Lutz - SAP Analytics & Business Intelligence",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "test": "echo \"No test specified yet\" && exit 0"
+  },
+  "keywords": [
+    "sap",
+    "analytics",
+    "power-bi",
+    "portfolio",
+    "business-intelligence",
+    "dax",
+    "sql"
+  ],
+  "author": "Fabian Lutz",
+  "license": "MIT"
+}
