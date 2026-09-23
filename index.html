@@ -420,9 +420,16 @@ button {
     gap: 2px;
 }
 
+.kpi-prefix {
+    color: var(--accent-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 .kpi-suffix {
     color: var(--accent-primary);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .kpi-label {
@@ -436,6 +443,129 @@ button {
     font-family: var(--font-mono);
     color: var(--text-muted);
     margin-top: 0.4rem;
+}
+
+.kurzprofil {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--text-primary);
+    max-width: 860px;
+    margin-bottom: 2.25rem;
+}
+
+/* ==========================================================================
+   CERTIFICATES & BADGES STRIP
+   ========================================================================== */
+.cert-section {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+    background: var(--bg-surface);
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1.75rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.cert-header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent-primary);
+    margin-bottom: 0.25rem;
+}
+
+.cert-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.cert-sub {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+}
+
+.cert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+}
+
+.cert-badge-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+}
+
+.cert-badge-type.gxp {
+    color: var(--accent-data);
+}
+
+.cert-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+
+.cert-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: auto;
+    padding-top: 0.65rem;
+    border-top: 1px dashed var(--border-subtle);
+    flex-wrap: wrap;
+}
+
+.cert-status {
+    color: var(--accent-data);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 600;
 }
 
 /* ==========================================================================
@@ -1051,6 +1181,7 @@ footer {
         </a>
 
         <nav class="nav-links" aria-label="Hauptnavigation">
+            <a href="#certificates" class="nav-link">Zertifikate</a>
             <a href="#projects" class="nav-link">Projekte</a>
             <a href="#architecture" class="nav-link">Datenarchitektur</a>
             <a href="#competencies" class="nav-link">Kompetenzen</a>
@@ -1074,23 +1205,23 @@ footer {
     <div class="container hero-content">
         <div class="eyebrow">
             <span>●</span>
-            <span>M.Sc. Digital Business &amp; Management · SAP &amp; Business Intelligence</span>
+            <span>M.Sc. Digital Business &amp; Management · SAP Analytics</span>
         </div>
 
         <h1 class="hero-title">FABIAN LUTZ</h1>
 
-        <p class="hero-lead">
-            SAP-Analytics-Beratung an der Schnittstelle von Geschäftsprozessen, regulatorischer Governance und moderner Datenarchitektur.
-        </p>
-
-        <p class="hero-description">
-            Vier Jahre operative SAP-Prozesspraxis im regulierten MedTech-Konzernumfeld (Getinge, Aesculap). Masterstudium mit Schwerpunkten auf Business Intelligence, multidimensionaler DWH-Modellierung und Advanced Analytics. Mein Fokus: Komplexe Unternehmensdaten aus Quellsystemen konsolidieren, in performante Sternschemata überführen und als intuitive Entscheidungsgrundlage bereitstellen.
-        </p>
+        <div class="kurzprofil">
+            Mehr als vier Jahre fundierte SAP-Prozesspraxis im regulierten Konzernumfeld. Masterabschluss in Digital Business and Management mit Schwerpunkten auf Business Intelligence und analytischen Datenarchitekturen. Mein Fokus: Wertschöpfende Analytics-, Reporting- und Dashboard-Lösungen an der Schnittstelle von Unternehmensdaten und Geschäftsprozessen.
+        </div>
 
         <div class="hero-cta-group">
             <a href="#projects" class="btn-primary">
                 <span>Projekte erkunden</span>
                 <span>↓</span>
+            </a>
+            <a href="#certificates" class="btn-secondary">
+                <span>Zertifikate &amp; Badges</span>
+                <span>🎖️</span>
             </a>
             <a href="#contact" class="btn-secondary">
                 <span>Kontakt aufnehmen</span>
@@ -1109,7 +1240,7 @@ footer {
                     <span class="count" data-count="130000">0</span>
                     <span class="kpi-suffix">+</span>
                 </div>
-                <div class="kpi-label">Datenpositionen im Berechtigungs-Dashboard</div>
+                <div class="kpi-label">Datenpositionen modelliert (Power BI &amp; SAP)</div>
                 <div class="kpi-sub">ETL: SAP ERP &amp; LMS konsolidiert</div>
             </div>
 
@@ -1124,19 +1255,84 @@ footer {
 
             <div class="kpi-card" role="listitem">
                 <div class="kpi-num">
-                    <span class="count" data-count="3">0</span>
-                    <span class="kpi-suffix">x</span>
+                    <span class="count" data-count="1.3" data-dec="1">0,0</span>
                 </div>
-                <div class="kpi-label">Offizielle SAP Learning Badges (SAC &amp; BDC)</div>
-                <div class="kpi-sub">SAP Analytics Cloud &amp; Business Data Cloud</div>
+                <div class="kpi-label">Master-Schwerpunkt Business Intelligence (Note)</div>
+                <div class="kpi-sub">Vertiefung DWH, BI &amp; Data Modeling</div>
             </div>
 
             <div class="kpi-card" role="listitem">
                 <div class="kpi-num">
-                    <span>seit&nbsp;</span><span class="count" data-count="2020" data-plain="1">2020</span>
+                    <span class="kpi-prefix">&gt;&nbsp;</span><span class="count" data-count="4.5" data-dec="1">0,0</span>
+                    <span class="kpi-suffix">&nbsp;Jahre</span>
                 </div>
-                <div class="kpi-label">SAP-Praxis im regulierten Konzernumfeld</div>
+                <div class="kpi-label">SAP-Systempraxis im Konzernumfeld</div>
                 <div class="kpi-sub">MedTech · QM, ECM &amp; OpenText</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CERTIFICATES & SAP LEARNING BADGES ==================== -->
+<section class="cert-section" id="certificates">
+    <div class="container">
+        <div class="cert-header">
+            <div class="cert-header-left">
+                <div class="cert-tag">Qualifikationen &amp; Nachweise</div>
+                <h2 class="cert-title">Zertifikate &amp; SAP-Lernpfade</h2>
+            </div>
+            <div class="cert-header-right">
+                <span class="cert-sub">Offizielle Prüfungen &amp; Praxiszertifikate</span>
+            </div>
+        </div>
+
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-badge-type">
+                    <span>🎖️</span>
+                    <span>SAP Learning Badge</span>
+                </div>
+                <div class="cert-name">Designing Stories in SAP Analytics Cloud</div>
+                <div class="cert-meta">
+                    <span>SAP SE · 06.2026</span>
+                    <span class="cert-status">✓ Verifiziert</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-badge-type">
+                    <span>🎖️</span>
+                    <span>SAP Learning Badge</span>
+                </div>
+                <div class="cert-name">Exploring SAP Analytics Cloud</div>
+                <div class="cert-meta">
+                    <span>SAP SE · 06.2026</span>
+                    <span class="cert-status">✓ Verifiziert</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-badge-type">
+                    <span>🎖️</span>
+                    <span>SAP Learning Badge</span>
+                </div>
+                <div class="cert-name">Introducing SAP Business Data Cloud</div>
+                <div class="cert-meta">
+                    <span>SAP SE · 06.2026</span>
+                    <span class="cert-status">✓ Verifiziert</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-badge-type gxp">
+                    <span>🛡️</span>
+                    <span>GAMP 5 / GxP Zertifikat</span>
+                </div>
+                <div class="cert-name">Zertifizierter Computervalidierungs-Beauftragter</div>
+                <div class="cert-meta">
+                    <span>CONCEPT HEIDELBERG</span>
+                    <span class="cert-status">✓ Zertifiziert</span>
+                </div>
             </div>
         </div>
     </div>
@@ -1203,9 +1399,9 @@ footer {
         <!-- Filter Bar -->
         <div class="filter-bar" role="toolbar" aria-label="Projektfilter">
             <button class="filter-btn active" data-filter="all">Alle Projekte (4)</button>
-            <button class="filter-btn" data-filter="power-bi">Power BI &amp; DAX (2)</button>
+            <button class="filter-btn" data-filter="sac">SAP Analytics Cloud (1)</button>
+            <button class="filter-btn" data-filter="power-bi">Power BI &amp; DAX (1)</button>
             <button class="filter-btn" data-filter="sap">SAP ERP &amp; QM (2)</button>
-            <button class="filter-btn" data-filter="arch">ETL &amp; Architektur (2)</button>
             <button class="filter-btn" data-filter="governance">Governance &amp; GxP (2)</button>
         </div>
 
@@ -1222,26 +1418,26 @@ footer {
                 <div class="star-blocks">
                     <div class="star-block">
                         <span class="star-label sit"><span>●</span> Ausgangslage</span>
-                        <p>Es fehlte ein strukturierter, auditfähiger Überblick über die systemischen Berechtigungsstände im Verhältnis zu verpflichtenden GxP-Schulungen von über 600 Mitarbeitenden im regulierten Umfeld.</p>
+                        <p>Mangelnde Transparenz und fehleranfälliger manueller Abgleich zwischen SAP-Berechtigungen und verpflichtenden GxP-Schulungsständen von über 600 Mitarbeitenden.</p>
                     </div>
 
                     <div class="star-block">
                         <span class="star-label act"><span>●</span> Mein Beitrag</span>
-                        <p>Eigenständige Konzeption und Entwicklung eines quellsystemübergreifenden ETL-Prozesses zur Konsolidierung und Modellierung von rund 130.000 Datenpositionen aus SAP ERP und dem LMS.</p>
+                        <p>Eigenständige Konzeption und Implementierung eines quellsystemübergreifenden ETL-Prozesses zur Konsolidierung und Modellierung von ca. 130.000 Datenpositionen aus SAP ERP und dem LMS mit Power Query, DAX und Star-Schema.</p>
                     </div>
 
                     <div class="star-block result">
                         <span class="star-label res"><span>●</span> Messbares Ergebnis</span>
-                        <p>Bereitstellung eines automatisierten Power-BI-Dashboards als proaktive, GxP-konforme Entscheidungsgrundlage für gezielte Nachschulungen oder risikobasierte Berechtigungsentzüge vor externen Audits.</p>
+                        <p>Bereitstellung eines automatisierten Power-BI-Dashboards als proaktive Entscheidungsgrundlage für Freigaben, Beseitigung von Compliance-Blindspots und drastische Reduktion manueller Prüfzeiten vor internen und externen Audits.</p>
                     </div>
                 </div>
 
                 <div class="card-bottom">
                     <div class="tools-list">
                         <span class="tool-chip">Power BI</span>
-                        <span class="tool-chip">SQL / ETL</span>
-                        <span class="tool-chip">Power Pivot</span>
-                        <span class="tool-chip">Sternschema</span>
+                        <span class="tool-chip">DAX &amp; Power Query</span>
+                        <span class="tool-chip">SQL</span>
+                        <span class="tool-chip">Star-Schema / ETL</span>
                         <span class="tool-chip">GxP Compliance</span>
                     </div>
                     <button class="detail-btn" onclick="openDeepDive(1)">
@@ -1252,26 +1448,65 @@ footer {
             </article>
 
             <!-- Card 2 -->
+            <article class="project-card" data-tags="sac cloud sap">
+                <div class="card-top">
+                    <h3 class="project-title">Cloud-Reporting &amp; Interactive Story Design</h3>
+                    <span class="project-company">SAP Analytics Cloud</span>
+                </div>
+
+                <div class="star-blocks">
+                    <div class="star-block">
+                        <span class="star-label sit"><span>●</span> Ausgangslage</span>
+                        <p>Anforderung an moderne, performante Management-Dashboards zur transparenten Aufbereitung komplexer Unternehmensdaten im SAP-Ökosystem.</p>
+                    </div>
+
+                    <div class="star-block">
+                        <span class="star-label act"><span>●</span> Mein Beitrag</span>
+                        <p>Konzeption und Gestaltung interaktiver Stories und Dashboards in SAP Analytics Cloud (SAC); Aufbau responsiver Seitenlayouts, Definition berechneter Kennzahlen, Schwellenwerte und visueller Hierarchien.</p>
+                    </div>
+
+                    <div class="star-block result">
+                        <span class="star-label res"><span>●</span> Messbares Ergebnis</span>
+                        <p>Erfolgreicher Abschluss dreier offizieller SAP Learning Badges sowie Nachweis fundierter Fähigkeiten im modernen Frontend Solution Design für cloudbasierte SAP-Lösungen.</p>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="tools-list">
+                        <span class="tool-chip">SAP Analytics Cloud (SAC)</span>
+                        <span class="tool-chip">Story Design</span>
+                        <span class="tool-chip">Responsive Dashboards</span>
+                        <span class="tool-chip">SAP Business Data Cloud</span>
+                        <span class="tool-chip">KPI-Visualisierung</span>
+                    </div>
+                    <button class="detail-btn" onclick="openDeepDive(2)">
+                        <span>SAC-Story &amp; Design-Details einsehen</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
             <article class="project-card" data-tags="sap governance">
                 <div class="card-top">
-                    <h3 class="project-title">Change-Management-Governance &amp; Audit-Reporting</h3>
+                    <h3 class="project-title">KPI-Extraktion &amp; Audit-Reporting im Change Management</h3>
                     <span class="project-company">Aesculap</span>
                 </div>
 
                 <div class="star-blocks">
                     <div class="star-block">
                         <span class="star-label sit"><span>●</span> Ausgangslage</span>
-                        <p>Enormer manueller Aufwand zur fehlerfreien Aufbereitung von Fallständen, Bearbeitungszeiten und offenen Change Controls vor den hochkritischen externen ISO-Zertifizierungsaudits.</p>
+                        <p>Hoher manueller Aufwand zur konsistenten Zusammenführung und Aufbereitung von Prozesskennzahlen, Bearbeitungszeiten und offenen Changes vor externen ISO- und MDR-Audits.</p>
                     </div>
 
                     <div class="star-block">
                         <span class="star-label act"><span>●</span> Mein Beitrag</span>
-                        <p>Steuerung der Prozessflüsse und Daten-Schnittstellen als globaler Process Owner für B.DOCS/OpenText sowie regelmäßige Extraktion und Aggregationslogik der Kennzahlen aus SAP ECM und QM.</p>
+                        <p>Definition von Daten-Schnittstellen und Extraktionslogiken als Schnittstellenverantwortlicher für B.DoCS (OpenText) sowie regelmäßige Auswertung und Aggregation von Qualitätsdaten aus SAP ECM und SAP QM.</p>
                     </div>
 
                     <div class="star-block result">
                         <span class="star-label res"><span>●</span> Messbares Ergebnis</span>
-                        <p>Erfolgreiche Bereitstellung tagesaktueller, transparenter KPI- und Audit-Reports für die externen Prüfer bei den 2–3 jährlichen Audits sowie für strategische Managementreviews ohne Befunde.</p>
+                        <p>Bereitstellung tagesaktueller Kennzahlenberichte für Management-Reviews und reibungslose Nachweisführung bei zwei bis drei jährlichen externen Audits.</p>
                     </div>
                 </div>
 
@@ -1281,88 +1516,49 @@ footer {
                         <span class="tool-chip">SAP ECM</span>
                         <span class="tool-chip">OpenText DMS</span>
                         <span class="tool-chip">KPI-Reporting</span>
-                        <span class="tool-chip">ISO Audits</span>
+                        <span class="tool-chip">Audit Governance</span>
                     </div>
-                    <button class="detail-btn" onclick="openDeepDive(2)">
+                    <button class="detail-btn" onclick="openDeepDive(3)">
                         <span>Audit-Logik &amp; Prozessdetails einsehen</span>
                         <span>→</span>
                     </button>
                 </div>
             </article>
 
-            <!-- Card 3 -->
-            <article class="project-card" data-tags="strategy">
+            <!-- Card 4 -->
+            <article class="project-card" data-tags="strategy arch">
                 <div class="card-top">
-                    <h3 class="project-title">Digitale &amp; hybride Geschäftsmodelle in der MedTech</h3>
-                    <span class="project-company">Masterthesis (Aesculap)</span>
+                    <h3 class="project-title">Digitale Plattformen &amp; datengetriebene Geschäftsmodelle</h3>
+                    <span class="project-company">Masterthesis (Note 1,3)</span>
                 </div>
 
                 <div class="star-blocks">
                     <div class="star-block">
                         <span class="star-label sit"><span>●</span> Ausgangslage</span>
-                        <p>Fehlen valider strategischer Rahmenwerke für die Entwicklung, Skalierung und Monetarisierung hybrider Produkt-Service-Systeme (smart PSS) im stark regulierten Umfeld der digitalen minimalinvasiven Chirurgie.</p>
+                        <p>Fehlen strategischer und funktionaler Blaupausen für die kommerzielle Skalierung und datengetriebene Monetarisierung (SaaS) digitaler Lösungen im chirurgischen Umfeld.</p>
                     </div>
 
                     <div class="star-block">
                         <span class="star-label act"><span>●</span> Mein Beitrag</span>
-                        <p>Qualitative Embedded Single-Case Study am Fallbeispiel der Aesculap AG mit 21 leitfadengestützten Experteninterviews (Kliniker, IT-Entscheider, interne Strategen &amp; Entwickler) sowie strukturierende Inhaltsanalyse nach Kuckartz in MAXQDA.</p>
+                        <p>Qualitative Untersuchung im Global Marketing durch Experteninterviews mit C-Level-Führungskräften (u. a. CTO) sowie Ableitung von System- und Datenanforderungen für skalierbare Plattformarchitekturen.</p>
                     </div>
 
                     <div class="star-block result">
                         <span class="star-label res"><span>●</span> Messbares Ergebnis</span>
-                        <p>Ausarbeitung konkreter Handlungsempfehlungen für modulare Plattformarchitekturen und Erlösmodelle. Bewertung der Masterthesis mit der Note 1,3 und Vorstellung der Ergebnisse auf VP-Ebene vor dem verantwortlichen VP Global Marketing MIS.</p>
+                        <p>Bewertung der Thesis mit der Note 1,3 und Vorstellung strategischer Handlungsempfehlungen auf VP-Ebene vor dem verantwortlichen VP Global Marketing MIS.</p>
                     </div>
                 </div>
 
                 <div class="card-bottom">
                     <div class="tools-list">
-                        <span class="tool-chip">Embedded Single-Case Study</span>
-                        <span class="tool-chip">21 Experteninterviews</span>
-                        <span class="tool-chip">MAXQDA / Kuckartz</span>
-                        <span class="tool-chip">VP-Präsentation MIS</span>
+                        <span class="tool-chip">Requirements Engineering</span>
+                        <span class="tool-chip">SaaS &amp; Plattformen</span>
+                        <span class="tool-chip">C-Level Reporting</span>
+                        <span class="tool-chip">Marktanalyse</span>
                         <span class="tool-chip">Note 1,3</span>
                     </div>
-                    <button class="detail-btn" onclick="openDeepDive(3)">
-                        <span>Forschungsansatz &amp; Framework einsehen</span>
-                        <span>→</span>
-                    </button>
-                </div>
-            </article>
-
-            <!-- Card 4 -->
-            <article class="project-card" data-tags="power-bi arch">
-                <div class="card-top">
-                    <h3 class="project-title">BI-Modellierung &amp; Analytische Datenarchitektur</h3>
-                    <span class="project-company">M.Sc. Studium</span>
-                </div>
-
-                <div class="star-blocks">
-                    <div class="star-block">
-                        <span class="star-label sit"><span>●</span> Ausgangslage</span>
-                        <p>Aufbau eines tiefgehenden Methodenfundaments für moderne Business-Intelligence-Architekturen – von relationaler SQL-Modellierung bis zur semantischen Frontend-Schicht.</p>
-                    </div>
-
-                    <div class="star-block">
-                        <span class="star-label act"><span>●</span> Mein Beitrag</span>
-                        <p>Spezialisierung im Master (Modulnote 1,3) auf Data-Warehouse-Konzepte (Star-/Snowflake-Schema, OLAP, ETL) sowie praktische Umsetzung in Power BI mit Power Pivot (DAX) und KNIME.</p>
-                    </div>
-
-                    <div class="star-block result">
-                        <span class="star-label res"><span>●</span> Messbares Ergebnis</span>
-                        <p>Solide Beherrschung von SQL (DDL/DML), mehrstufiger Datenmodellierung und der performanten Anbindung heterogener Datenquellen an analytische Frontends – praxiserprobt und sofort einsetzbar.</p>
-                    </div>
-                </div>
-
-                <div class="card-bottom">
-                    <div class="tools-list">
-                        <span class="tool-chip">Power BI</span>
-                        <span class="tool-chip">Power Pivot / DAX</span>
-                        <span class="tool-chip">KNIME Analytics</span>
-                        <span class="tool-chip">SQL (DDL/DML)</span>
-                        <span class="tool-chip">Star-Schema</span>
-                    </div>
                     <button class="detail-btn" onclick="openDeepDive(4)">
-                        <span>DWH-Konzept &amp; SQL-Methodik einsehen</span>
+                        <span>Forschungsansatz &amp; Framework einsehen</span>
                         <span>→</span>
                     </button>
                 </div>
@@ -1512,21 +1708,20 @@ footer {
 // --- 2. KPI Counter Animation ---
 (function initCounters() {
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function fmt(v, dec, plain) {
+    function fmt(v, dec) {
         if (dec) return v.toFixed(1).replace('.', ',');
-        if (plain) return String(Math.round(v));
         return Math.round(v).toLocaleString('de-DE');
     }
     function animateCount(el) {
         var target = parseFloat(el.dataset.count);
-        var dec = !!el.dataset.dec, plain = !!el.dataset.plain;
-        if (reduced) { el.textContent = fmt(target, dec, plain); return; }
-        var start = plain ? 2012 : 0, dur = 1400, t0 = null;
+        var dec = !!el.dataset.dec;
+        if (reduced) { el.textContent = fmt(target, dec); return; }
+        var start = 0, dur = 1400, t0 = null;
         function step(ts) {
             if (!t0) t0 = ts;
             var p = Math.min((ts - t0) / dur, 1);
             var e = 1 - Math.pow(1 - p, 3);
-            el.textContent = fmt(start + (target - start) * e, dec, plain);
+            el.textContent = fmt(start + (target - start) * e, dec);
             if (p < 1) requestAnimationFrame(step);
         }
         requestAnimationFrame(step);
@@ -1616,37 +1811,45 @@ var deepDiveData = {
         tag: "GETINGE · GXP & POWER BI",
         title: "Automatisierte Steuerung von Systemberechtigungen",
         html: "<p><strong>Projektkontext:</strong> Im regulierten MedTech-Umfeld dürfen Mitarbeitende SAP-Transaktionen nur dann ausführen, wenn die zugehörigen GxP-Schulungen gültig sind. Bei Audits führt jede Diskrepanz zu schwerwiegenden Findings.</p>" +
-              "<p><strong>Architektur & Modellierung:</strong></p>" +
+              "<p><strong>Architektur &amp; Modellierung:</strong></p>" +
               "<div class='code-snippet'>-- Schema-Auszug Fact_Permissions<br>Fact_UserPermissions [<br>&nbsp;&nbsp;User_ID (FK),<br>&nbsp;&nbsp;Role_ID (FK),<br>&nbsp;&nbsp;Training_ID (FK),<br>&nbsp;&nbsp;Assignment_Date,<br>&nbsp;&nbsp;Is_Compliant = IF(Training_Status = \"Passed\" &amp;&amp; Expiry_Date &gt; TODAY(), 1, 0)<br>]</div>" +
-              "<p><strong>Erreichte Wirkung:</strong> Vollständige Transparenz über 130.000 Berechtigungsdatensätze. 100% Audit-Readiness durch proaktive Warnungen vor Fristablauf.</p>"
+              "<p><strong>Erreichte Wirkung:</strong> Vollständige Transparenz über ca. 130.000 Berechtigungsdatensätze. Beseitigung von Compliance-Blindspots und drastische Reduktion manueller Prüfzeiten vor internen und externen Audits.</p>"
     },
     2: {
-        tag: "AESCULAP · SAP ERP / QM / ECM",
-        title: "Change-Management-Governance & Audit-Reporting",
-        html: "<p><strong>Projektkontext:</strong> Globales Change Control Management für chirurgische Medizinprodukte. Vor externen ISO-Audits (z. B. TÜV SÜD) müssen sämtliche Change-Historien, Durchlaufzeiten und Freigabestände lückenlos nachweisbar sein.</p>" +
-              "<p><strong>Kernleistungen:</strong></p>" +
-              "<ul><li>Systemische Datenextraktion aus SAP QM/ECM und OpenText DMS</li><li>Definition standardisierter KPI-Berechnungen für Bearbeitungsdurchlaufzeiten</li><li>Etablierung von wöchentlichen Management-Reviews zur Beseitigung von Engpässen</li></ul>" +
-              "<p><strong>Ergebnis:</strong> Erfolgreiche Zertifizierungsaudits ohne formale Abweichungen im Change-Control-Prozess.</p>"
+        tag: "SAP SE · SAP ANALYTICS CLOUD",
+        title: "Cloud-Reporting & Interactive Story Design",
+        html: "<p><strong>Projektkontext:</strong> Zeitgemäße Entscheidungsunterstützung im SAP-Umfeld verlangt intuitive, performante Management-Stories zur transparenten Aufbereitung komplexer Unternehmensdaten.</p>" +
+              "<p><strong>Frontend Solution Design in SAC:</strong></p>" +
+              "<ul>" +
+              "<li>Strukturierung responsiver Pages und Canvas-Layouts nach IBCS-Regeln für höchste Informationsdichte und visuelle Hierarchien.</li>" +
+              "<li>Definition berechneter Kennzahlen (Calculated Measures), Aggregationslogiken und bedingter Schwellenwert-Formatierungen (Thresholds).</li>" +
+              "<li>Verknüpfung analytischer Modelle mit der SAP Business Data Cloud (BDC).</li>" +
+              "</ul>" +
+              "<p><strong>Verifizierte Qualifikation:</strong> Erfolgreicher Abschluss dreier offizieller SAP Learning Badges (Designing Stories in SAC, Exploring SAC, Introducing SAP Business Data Cloud).</p>"
     },
     3: {
+        tag: "AESCULAP · SAP ERP / QM / ECM",
+        title: "KPI-Extraktion & Audit-Reporting im Change Management",
+        html: "<p><strong>Projektkontext:</strong> Globales Change Control Management für chirurgische Medizinprodukte. Vor externen ISO- und MDR-Audits (z. B. TÜV SÜD) müssen sämtliche Change-Historien, Durchlaufzeiten und Freigabestände lückenlos nachweisbar sein.</p>" +
+              "<p><strong>Kernleistungen:</strong></p>" +
+              "<ul>" +
+              "<li>Definition von Schnittstellen und Extraktionslogiken als Schnittstellenverantwortlicher für B.DoCS (OpenText DMS).</li>" +
+              "<li>Standardisierte KPI-Berechnung und Aggregation von Qualitätsdaten aus SAP ECM und SAP QM.</li>" +
+              "<li>Bereitstellung tagesaktueller Kennzahlenberichte für Management-Reviews.</li>" +
+              "</ul>" +
+              "<p><strong>Ergebnis:</strong> Reibungslose Nachweisführung bei zwei bis drei jährlichen externen Audits ohne Abweichungen.</p>"
+    },
+    4: {
         tag: "AESCULAP AG · MASTERTHESIS (M.SC.)",
-        title: "Entwicklung hybrider Geschäftsmodelle in der Medizintechnik",
-        html: "<p><strong>Forschungsgegenstand:</strong> Qualitative Untersuchung erfolgskritischer Faktoren für hybride Geschäftsmodelle und smarte Produkt-Service-Systeme (smart PSS) im Bereich der digitalen minimalinvasiven Chirurgie am Fallbeispiel der Aesculap AG.</p>" +
+        title: "Digitale Plattformen & datengetriebene Geschäftsmodelle",
+        html: "<p><strong>Forschungsgegenstand:</strong> Qualitative Untersuchung erfolgskritischer Faktoren für hybride Geschäftsmodelle und Plattformarchitekturen im Bereich der digitalen minimalinvasiven Chirurgie am Fallbeispiel der Aesculap AG.</p>" +
               "<p><strong>Methodik &amp; Datengrundlage:</strong></p>" +
               "<ul>" +
               "<li>Embedded Single-Case Study mit 21 leitfadengestützten Experteninterviews entlang der gesamten Wertschöpfungskette (Klinische Anwender, Technische Entscheider, Interne Produktstrategen, Interne Realisierer &amp; Entwickler, Externe Impulsgeber).</li>" +
               "<li>Computergestützte strukturierende qualitative Inhaltsanalyse nach Kuckartz in MAXQDA (6 Analysedimensionen, 32 Subkategorien).</li>" +
               "</ul>" +
-              "<p><strong>Kern-Erkenntnisse &amp; Spannungsfelder:</strong> Evidenzpflicht &amp; Technical Compliance im Buying Center, Hürden der Krankenhaus-Budgetlogik (CAPEX/OPEX), Datenhoheit &amp; offene Plattformarchitekturen sowie regulatorische Rahmenbedingungen (MDR / EU AI Act vs. Software-Agilität).</p>" +
-              "<p><strong>Ergebnis &amp; Transfer:</strong> Bewertung der Masterthesis mit der Note 1,3. Vorstellung der strategischen Implikationen und Handlungsempfehlungen auf VP-Ebene vor dem verantwortlichen VP Global Marketing MIS.</p>"
-    },
-    4: {
-        tag: "HOCHSCHULE · M.SC. STUDIUM",
-        title: "BI-Modellierung & Analytische Datenarchitektur",
-        html: "<p><strong>Inhalte des Moduls:</strong> Konzeption relationaler und multidimensionaler Datenmodelle. Unterschiede zwischen Inmon- und Kimball-Ansätzen, Star- vs. Snowflake-Schemata, Dimensionstypen (SCD Type 1–3).</p>" +
-              "<p><strong>Praktische Vertiefung:</strong></p>" +
-              "<div class='code-snippet'>-- SQL Data Modeling & Aggregation Logic<br>SELECT dim_user.department, COUNT(fact.permission_id) AS active_perms<br>FROM Fact_UserPermissions fact<br>JOIN Dim_User dim_user ON fact.user_key = dim_user.user_key<br>WHERE fact.valid_to &gt; CURRENT_DATE<br>GROUP BY dim_user.department;</div>" +
-              "<p><strong>Ergebnis:</strong> Modulnote 1,3 und fundierte Praxiskompetenz in DAX, SQL und ETL-Pipelines.</p>"
+              "<p><strong>Kern-Spannungsfelder:</strong> Evidenzpflicht &amp; Technical Compliance im Buying Center, Hürden der Krankenhaus-Budgetlogik (CAPEX/OPEX), Datenhoheit &amp; offene Plattformarchitekturen sowie regulatorische Rahmenbedingungen (MDR / EU AI Act vs. Software-Agilität).</p>" +
+              "<p><strong>Ergebnis &amp; Transfer:</strong> Bewertung der Masterthesis mit der Note 1,3. Vorstellung der strategischen Handlungsempfehlungen auf VP-Ebene vor dem verantwortlichen VP Global Marketing MIS.</p>"
     }
 };
 

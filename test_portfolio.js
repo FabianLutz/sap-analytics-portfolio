@@ -18,7 +18,7 @@ const requiredStrings = [
     'Fabian Lutz',
     'M.Sc. Digital Business & Management',
     'data-theme="dark"',
-    'themeToggle',
+    'id="certificates"',
     'id="architecture"',
     'id="projects"',
     'id="competencies"',
