@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx serve .",
     "start": "npx serve .",
-    "test": "echo \"No test specified yet\" && exit 0"
+    "test": "node test_portfolio.js && node playwright_test.js"
   },
   "keywords": [
     "sap",
@@ -18,5 +18,8 @@
     "sql"
   ],
   "author": "Fabian Lutz",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
 }

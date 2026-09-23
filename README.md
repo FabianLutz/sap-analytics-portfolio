@@ -3,6 +3,8 @@
 > Interaktives Online-Portfolio für den Einstieg in die **SAP-Analytics- und Business-Intelligence-Beratung**.  
 > Fokus: Schnittstelle zwischen Geschäftsprozessen, Datenarchitektur und regulierten Unternehmensumfeldern (MedTech / GxP / ISO).
 
+![Portfolio Vorschau](portfolio_preview.png)
+
 ---
 
 ## 📌 Über das Portfolio
@@ -11,20 +13,31 @@ Dieses Portfolio präsentiert ausgewählte Praxis- und Masterprojekte von **Fabi
 
 - **SAP & Enterprise Systeme:** SAP ERP, QM, ECM, OpenText DMS
 - **Business Intelligence & Analytics:** Power BI, Power Pivot, DAX, KNIME, SQL (DDL/DML)
-- **Datenarchitektur & ETL:** Star-/Snowflake-Schema, multidimensionale Modellierung, Schnittstellenkonsolidierung
-- **Governance & Compliance:** GxP-Validierung, Audit-Reporting (ISO-Zertifizierungen), Berechtigungssteuerung
+- **Datenarchitektur & ETL:** Star-/Snowflake-Schema, multidimensionale Modellierung, Schnittstellenkonsolidierung (130.000+ Datensätze)
+- **Governance & Compliance:** GxP-Validierung, Audit-Reporting (ISO-Zertifizierungen), Berechtigungssteuerung (600+ Mitarbeitende)
 - **Strategie:** Hybride Geschäftsmodelle, SaaS-Monetarisierung, Primärforschung & C-Level-Interviews
 
 ---
 
-## 🚀 Lokale Vorschau / Entwicklung
+## ✨ Features & Interaktive Komponenten
 
-Das Projekt ist schlank, schnell und ohne schwere Abhängigkeiten aufgebaut. Es kann direkt über jeden Standard-Webserver ausgeführt werden:
+- 🌓 **Enterprise Dark & Light Mode:** Nahtloser Farbmodus-Wechsel mit persistenter Speicherung in `localStorage`.
+- 🔄 **Interaktive Datenarchitektur-Pipeline:** 4-Stufen-Visualisierung (Quellsysteme $\rightarrow$ ETL $\rightarrow$ Sternschema $\rightarrow$ Power BI Cockpit) mit Klick-Inspektor.
+- 🏷️ **Dynamische Projektfilter:** Filterung der Praxisfälle nach *Power BI & DAX*, *SAP ERP & QM*, *ETL & Architektur* sowie *Governance & GxP*.
+- 🔍 **Case-Study Deep-Dive Modals:** Detaillierte Architektureinblicke inklusive DAX- und SQL-Snippets sowie methodischer Hintergrund.
+- 📄 **Print & PDF-Export:** Vollständig optimiertes Print-Stylesheet (`@media print`) für den direkten A4-Export als 1-2-seitiges Executive Factsheet.
+- ⚡ **Geschmeidige KPI-Zähleranimation:** Performance-optimiert via `requestAnimationFrame` und `IntersectionObserver` mit Barrierefreiheitsunterstützung (`prefers-reduced-motion`).
 
-### Option 1: Node.js (z. B. npx serve)
+---
+
+## 🚀 Lokale Vorschau & Entwicklung
+
+Das Projekt ist schlank und kann direkt ausgeführt werden:
+
+### Option 1: Schneller lokaler Server (npm)
 ```bash
-npx serve .
-# Oder mit beliebigem Live-Server
+npm run dev
+# Startet einen lokalen Webserver unter http://localhost:3000
 ```
 
 ### Option 2: Python HTTP Server
@@ -33,8 +46,11 @@ python -m http.server 8000
 ```
 Anschließend im Browser öffnen: [http://localhost:8000](http://localhost:8000)
 
-### Option 3: Direktes Öffnen
-Die Datei `index.html` kann auch direkt per Doppelklick im Webbrowser geöffnet werden.
+### Option 3: Automatisierte Tests ausführen
+```bash
+npm test
+# Führt statische Validierungen und Playwright E2E-Tests durch
+```
 
 ---
 
@@ -52,9 +68,13 @@ Das Portfolio ist für **GitHub Pages** optimiert:
 
 ```
 sap-analytics-portfolio/
-├── index.html        # Hauptseite (Responsive HTML5, modern CSS, Vanilla JS)
-├── README.md         # Projektdokumentation & Quickstart
-└── .gitignore        # Git-Ausschlussregeln
+├── index.html            # Hauptseite (Responsive HTML5, Semantic CSS, Vanilla JS)
+├── package.json          # npm-Konfiguration, Skripte & DevDependencies
+├── README.md             # Projektdokumentation & Quickstart
+├── .gitignore            # Git-Ausschlussregeln
+├── test_portfolio.js     # Statischer Komponenten- und Validierungstest
+├── playwright_test.js    # Playwright E2E-Testsuite & Screenshot-Generator
+└── portfolio_preview.png # Portfolio-Vorschaubild
 ```
 
 ---
