@@ -1,32 +1,24 @@
-# Fabian Lutz – SAP Analytics Portfolio
+# Fabian Lutz – SAP Analytics & Business Intelligence Portfolio
 
-> Interaktives Online-Portfolio für den Einstieg in die **SAP-Analytics- und Business-Intelligence-Beratung**.  
-> Fokus: Schnittstelle zwischen Geschäftsprozessen, Datenarchitektur und regulierten Unternehmensumfeldern (MedTech / GxP / ISO).
+> Interaktives Online-Portfolio für den Einstieg in **SAP-Analytics- & Business-Intelligence-Positionen**.  
+> Fokus: Die wirksame Schnittstelle zwischen Geschäftsprozessen, SAP-Datenstrukturen, modernem Solution Design (Power BI & SAC) und audit-sicherer Governance (GAMP 5 & ALCOA+).
 
+🌐 **Live-Portfolio:** [https://fabianlutz.github.io/sap-analytics-portfolio/](https://fabianlutz.github.io/sap-analytics-portfolio/)  
 ![Portfolio Vorschau](portfolio_preview.png)
 
 ---
 
-## 📌 Über das Portfolio
+## 📌 Struktur & Kerninhalte (7-Stufen-Dramaturgie)
 
-Dieses Portfolio präsentiert ausgewählte Praxis- und Masterprojekte von **Fabian Lutz** (M.Sc. Digital Business & Management). Es hebt Kernkompetenzen in folgenden Bereichen hervor:
+Dieses Portfolio präsentiert den belegbaren Werdegang und die Praxiskompetenzen von **Fabian Lutz** (M.Sc. Digital Business & Management, Gesamtnote 1,4 / Schwerpunkt BI 1,3):
 
-- **SAP & Enterprise Systeme:** SAP ERP, QM, ECM, OpenText DMS
-- **Business Intelligence & Analytics:** Power BI, Power Pivot, DAX, KNIME, SQL (DDL/DML)
-- **Datenarchitektur & ETL:** Star-/Snowflake-Schema, multidimensionale Modellierung, Schnittstellenkonsolidierung (130.000+ Datensätze)
-- **Governance & Compliance:** GxP-Validierung, Audit-Reporting (ISO-Zertifizierungen), Berechtigungssteuerung (600+ Mitarbeitende)
-- **Strategie:** Hybride Geschäftsmodelle, SaaS-Monetarisierung, Primärforschung & C-Level-Interviews
-
----
-
-## ✨ Features & Interaktive Komponenten
-
-- 🌓 **Enterprise Dark & Light Mode:** Nahtloser Farbmodus-Wechsel mit persistenter Speicherung in `localStorage`.
-- 🔄 **Interaktive Datenarchitektur-Pipeline:** 4-Stufen-Visualisierung (Quellsysteme $\rightarrow$ ETL $\rightarrow$ Sternschema $\rightarrow$ Power BI Cockpit) mit Klick-Inspektor.
-- 🏷️ **Dynamische Projektfilter:** Filterung der Praxisfälle nach *Power BI & DAX*, *SAP ERP & QM*, *ETL & Architektur* sowie *Governance & GxP*.
-- 🔍 **Case-Study Deep-Dive Modals:** Detaillierte Architektureinblicke inklusive DAX- und SQL-Snippets sowie methodischer Hintergrund.
-- 📄 **Print & PDF-Export:** Vollständig optimiertes Print-Stylesheet (`@media print`) für den direkten A4-Export als 1-2-seitiges Executive Factsheet.
-- ⚡ **Geschmeidige KPI-Zähleranimation:** Performance-optimiert via `requestAnimationFrame` und `IntersectionObserver` mit Barrierefreiheitsunterstützung (`prefers-reduced-motion`).
+1. **Hero & geschärftes Profil:** Über 4,5 Jahre SAP-Prozesspraxis im regulierten Konzernumfeld, quantifizierte KPI-Zähler (130k Daten, 600 User, Master 1,4, > 4,5 Jahre).
+2. **Zertifikate & SAP Learning Badges:** 3x offizielle SAP Badges (SAC Story Design, Exploring SAC, Business Data Cloud) + GAMP 5 Computervalidierungs-Beauftragter.
+3. **Praxisprojekte (STAR-Methode):** Getinge (Power BI Governance), SAC Story Showcase, Aesculap (Change Management), Masterthesis (C-Level-Interviews & VP-Präsentation).
+4. **End-to-End Datenarchitektur:** Interaktive 4-Stufen-Pipeline von heterogenen Quellsystemen über DWH-Sternschema bis zum Power BI Decision Cockpit.
+5. **Qualitätsversprechen & Kompetenzprofil:** Audit-Readiness nach GAMP 5 & ALCOA+ sowie 3-Säulen-Matrix (SAP & Enterprise IT, BI & Datenarchitektur, Business Analyse).
+6. **Externe Validierung (Zeugnis-Zitate):** Qualifizierte Referenzauszüge der Getinge-Gruppe und Aesculap AG.
+7. **Zielrollen & Kontakt:** Fokus-Profile (IT Data Analyst, SAP Business Analyst, Data Governance Specialist) & direkte Kontaktaufnahme (ab sofort verfügbar).
 
 ---
 
