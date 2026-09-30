@@ -40,7 +40,10 @@ const requiredStrings = [
     'IT Data Analyst / BI Specialist',
     'SAP &amp; Enterprise Business Analyst',
     'Data Governance &amp; Compliance Analyst',
-    'Verfügbar für den Einstieg in die SAP-Analytics-Positionen ab sofort'
+    'Verfügbar für den Einstieg in die SAP-Analytics-Positionen ab sofort',
+    'AI Fluency: Framework and foundations',
+    'https://academy.claude.com/badges/732b263f-e7cd-4af5-a3d2-db04036b6b46',
+    'Claude Academy Badge'
 ];
 
 let allPassed = true;

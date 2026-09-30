@@ -34,6 +34,9 @@ const fs = require('fs');
         if (!certEl) throw new Error("Missing #certificates element!");
         await certEl.scrollIntoViewIfNeeded();
         await page.waitForTimeout(300);
+        const certCount = await page.$$eval('.cert-card', cards => cards.length);
+        console.log("Found certificate cards:", certCount);
+        if (certCount !== 5) throw new Error(`Expected 5 certificate cards, found ${certCount}`);
         await page.screenshot({ path: path.join(artifactDir, 'portfolio_certificates.png'), clip: { x: 0, y: 0, width: 1280, height: 600 } });
         console.log("Saved portfolio_certificates.png");
 

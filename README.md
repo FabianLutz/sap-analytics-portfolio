@@ -13,7 +13,7 @@
 Dieses Portfolio präsentiert den belegbaren Werdegang und die Praxiskompetenzen von **Fabian Lutz** (M.Sc. Digital Business & Management, Gesamtnote 1,4 / Schwerpunkt BI 1,3):
 
 1. **Hero & geschärftes Profil:** Über 4,5 Jahre SAP-Prozesspraxis im regulierten Konzernumfeld, quantifizierte KPI-Zähler (130k Daten, 600 User, Master 1,4, > 4,5 Jahre).
-2. **Zertifikate & SAP Learning Badges:** 3x offizielle SAP Badges (SAC Story Design, Exploring SAC, Business Data Cloud) + GAMP 5 Computervalidierungs-Beauftragter.
+2. **Zertifikate & Badges:** 3x offizielle SAP Badges (SAC Story Design, Exploring SAC, Business Data Cloud) + Claude Academy Badge (*AI Fluency: Framework and foundations*) + GAMP 5 Computervalidierungs-Beauftragter.
 3. **Praxisprojekte (STAR-Methode):** Getinge (Power BI Governance), SAC Story Showcase, Aesculap (Change Management), Masterthesis (C-Level-Interviews & VP-Präsentation).
 4. **End-to-End Datenarchitektur:** Interaktive 4-Stufen-Pipeline von heterogenen Quellsystemen über DWH-Sternschema bis zum Power BI Decision Cockpit.
 5. **Qualitätsversprechen & Kompetenzprofil:** Audit-Readiness nach GAMP 5 & ALCOA+ sowie 3-Säulen-Matrix (SAP & Enterprise IT, BI & Datenarchitektur, Business Analyse).

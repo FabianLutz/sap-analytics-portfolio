@@ -501,21 +501,23 @@ button {
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.15rem;
 }
 
 .cert-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    padding: 1.25rem 1.4rem;
+    padding: 1.25rem 1.35rem;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     position: relative;
     overflow: hidden;
+    color: inherit;
+    text-decoration: none;
 }
 
 .cert-card:hover {
@@ -537,6 +539,10 @@ button {
 
 .cert-badge-type.gxp {
     color: var(--accent-data);
+}
+
+.cert-badge-type.ai {
+    color: #E07A5F;
 }
 
 .cert-name {
@@ -1611,10 +1617,10 @@ footer {
         <div class="cert-header">
             <div class="cert-header-left">
                 <div class="cert-tag">Qualifikationen &amp; Nachweise</div>
-                <h2 class="cert-title">Zertifikate &amp; SAP-Lernpfade</h2>
+                <h2 class="cert-title">Zertifikate &amp; Lernpfade</h2>
             </div>
             <div class="cert-header-right">
-                <span class="cert-sub">Offizielle Prüfungen &amp; Praxiszertifikate</span>
+                <span class="cert-sub">Offizielle Prüfungen, SAP- &amp; AI-Badges</span>
             </div>
         </div>
 
@@ -1654,6 +1660,18 @@ footer {
                     <span class="cert-status">✓ Verifiziert</span>
                 </div>
             </div>
+
+            <a href="https://academy.claude.com/badges/732b263f-e7cd-4af5-a3d2-db04036b6b46" target="_blank" rel="noopener noreferrer" class="cert-card" title="Offizielles Badge auf Claude Academy ansehen">
+                <div class="cert-badge-type ai">
+                    <span>✻</span>
+                    <span>Claude Academy Badge</span>
+                </div>
+                <div class="cert-name">AI Fluency: Framework and foundations</div>
+                <div class="cert-meta">
+                    <span>Claude Academy · 09.2026</span>
+                    <span class="cert-status">✓ Verifiziert ↗</span>
+                </div>
+            </a>
 
             <div class="cert-card">
                 <div class="cert-badge-type gxp">
