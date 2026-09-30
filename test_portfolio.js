@@ -43,7 +43,10 @@ const requiredStrings = [
     'Verfügbar für den Einstieg in die SAP-Analytics-Positionen ab sofort',
     'AI Fluency: Framework and foundations',
     'https://academy.claude.com/badges/732b263f-e7cd-4af5-a3d2-db04036b6b46',
-    'Claude Academy Badge'
+    'Claude Academy Badge',
+    'https://badger.learning.sap.com/verify/xadap-lycod-karok-lipap-sanan',
+    'https://badger.learning.sap.com/verify/xunap-rybeg-tafip-lofes-bavyn',
+    'https://badger.learning.sap.com/verify/xidar-sedaf-bisel-cytak-susep'
 ];
 
 let allPassed = true;
